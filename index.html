@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2K T-Shirts - Premium Quality Tees</title> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2K T-Shirts - Premium Quality Tees in Tirupur</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="P2K T-Shirts in Tirupur offers premium quality t-shirts with modern designs. Single, bulk, and custom orders available with fast delivery and exceptional quality.">
+    <meta name="keywords" content="P2K T-Shirts, Premium T-Shirts, Custom T-Shirts, Bulk T-Shirts, Tirupur T-Shirts, Quality Tees, Fashion T-Shirts, Made in Tirupur">
+    <meta name="author" content="P2K T-Shirts">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="P2K T-Shirts - Premium Quality Tees in Tirupur">
+    <meta property="og:description" content="Premium t-shirts in Tirupur that make a statement. Single, bulk, and custom orders available. Fast delivery.">
+    <meta property="og:image" content="https://thep2k.com/images/og-image.jpg">
+    <meta property="og:url" content="https://thep2k.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="P2K T-Shirts - Premium Quality Tees in Tirupur">
+    <meta name="twitter:description" content="Premium t-shirts in Tirupur. Single, bulk, and custom orders available. High-quality fabrics and fast delivery.">
+    <meta name="twitter:image" content="https://thep2k.com/images/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://thep2k.com/images/favicon.ico" type="image/x-icon">
+
+    <!-- Structured Data (LocalBusiness JSON-LD for SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "P2K T-Shirts",
+      "image": "https://thep2k.com/images/og-image.jpg",
+      "url": "https://thep2k.com/",
+      "telephone": "+91 63828 00552",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tirupur",
+        "addressLocality": "Tirupur",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "641601",
+        "addressCountry": "IN"
+      },
+      "description": "P2K T-Shirts in Tirupur offers premium quality t-shirts. Single, bulk, and custom orders available.",
+      "priceRange": "₹180 - ₹350",
+      "sameAs": [
+        "https://www.facebook.com/thep2k",
+        "https://www.instagram.com/thep2k"
+      ]
+    }
+    </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+        
+        /* Modal Popup */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        .modal-content {
+            position: absolute;
+            background: white;
+            padding: 0;
+            width: 90%;
+            max-width: 450px;
+            border-radius: 25px;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4), 0 0 0 1px rgba(102, 126, 234, 0.1);
+            animation: popIn 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            overflow: hidden;
+            pointer-events: auto;
+            cursor: move;
+        }
+        
+        .modal-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            position: relative;
+            cursor: move;
+            user-select: none;
+        }
+        
+        .modal-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0;
+        }
+        
+        .close {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        .close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+        
+        .modal-body {
+            padding: 2.5rem;
+        }
+        
+        .order-info {
+            margin-bottom: 1.5rem;
+        }
+        
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #666;
+        }
+        
+        .info-value {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .info-value.price {
+            font-size: 1.5rem;
+            color: #667eea;
+        }
+        
+        .modal-footer {
+            padding: 0 2.5rem 2.5rem;
+        }
+        
+        .modal-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+        }
+        
+        .modal-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        .modal-note {
+            text-align: center;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #1a1a1a;
+            font-weight: 500;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: rotate 60s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        /* Section Styles */
+        section {
+            padding: 6rem 2rem;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 4rem;
+        }
+        
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 350px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product-image::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.2), transparent);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.95);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #667eea;
+        }
+        
+        .product-details {
+            padding: 2rem;
+        }
+        
+        .product-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: #1a1a1a;
+        }
+        
+        .product-description {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .product-price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+        
+        .product-price span {
+            font-size: 1rem;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 0.5rem;
+        }
+        
+        .order-btn {
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .order-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* Bulk Section */
+        .bulk-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.2);
+        }
+        
+        .pricing-card.featured {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: scale(1.05);
+        }
+        
+        .pricing-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .pricing-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .pricing-amount {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1.5rem 0;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .pricing-features li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        
+        .pricing-card.featured .pricing-features li {
+            border-bottom-color: rgba(255,255,255,0.2);
+        }
+        
+        /* Custom Section */
+        .custom-section {
+            background: #1a1a1a;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .custom-section::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            top: -250px;
+            right: -250px;
+            opacity: 0.1;
+        }
+        
+        .custom-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        
+        .feature-box {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        
+        .feature-box:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-box {
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+        
+        footer p {
+            margin: 0.5rem 0;
+            opacity: 0.8;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .product-grid,
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                gap: 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .modal-content {
+                margin: 20% auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">P2K</div>
+            <ul class="nav-links">
+                <li><a href="#single">Single Tees</a></li>
+                <li><a href="#bulk">Bulk Orders</a></li>
+                <li><a href="#custom">Custom Design</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium T-Shirts That Make a Statement</h1>
+            <p>Quality craftsmanship meets modern design. Your style, our passion.</p>
+            <a href="#single" class="cta-btn">Explore Collection</a>
+        </div>
+    </section>
+    
+    <!-- Single T-Shirts Section -->
+    <section id="single">
+        <div class="container">
+            <h2 class="section-title">Single T-Shirts</h2>
+            <p class="section-subtitle">Premium quality tees for every occasion</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Best Seller</div>
+                        👕
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Classic White</h3>
+                        <p class="product-description">100% premium cotton with a perfect fit. Breathable and durable for everyday wear.</p>
+                        <div class="product-price">₹299 <span>₹499</span></div>
+                        <button class="order-btn" onclick="showOrderModal('Classic White T-Shirt', '₹299')">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">Premium</div>
+                        👕
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Midnight Black</h3>
+                        <p class="product-description">Sleek black tee with superior quality fabric. Perfect for any occasion.</p>
+                        <div class="product-price">₹299 <span>₹499</span></div>
+                        <button class="order-btn" onclick="showOrderModal('Midnight Black T-Shirt', '₹299')">Order Now</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-badge">New</div>
+                        👕
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Ocean Blue</h3>
+                        <p class="product-description">Fresh navy blue with premium finishing. Stand out with style.</p>
+                        <div class="product-price">₹299 <span>₹499</span></div>
+                        <button class="order-btn" onclick="showOrderModal('Ocean Blue T-Shirt', '₹299')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bulk Orders Section -->
+    <section id="bulk" class="bulk-section">
+        <div class="container">
+            <h2 class="section-title">Bulk Orders</h2>
+            <p class="section-subtitle">Special wholesale pricing for businesses and events</p>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-icon">📦</div>
+                    <h3 class="pricing-title">Starter Pack</h3>
+                    <div class="pricing-amount">₹250</div>
+                    <ul class="pricing-features">
+                        <li>10-50 T-Shirts</li>
+                        <li>All Colors Available</li>
+                        <li>Quality Guaranteed</li>
+                        <li>Fast Delivery</li>
+                    </ul>
+                    <button class="order-btn" onclick="showOrderModal('Starter Pack (10-50 pieces)', '₹250 per piece')">Get Quote</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-icon">🎯</div>
+                    <h3 class="pricing-title">Business Pack</h3>
+                    <div class="pricing-amount">₹220</div>
+                    <ul class="pricing-features">
+                        <li>50-100 T-Shirts</li>
+                        <li>Free Design Consultation</li>
+                        <li>Premium Quality</li>
+                        <li>Priority Delivery</li>
+                    </ul>
+                    <button class="order-btn" onclick="showOrderModal('Business Pack (50-100 pieces)', '₹220 per piece')">Get Quote</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-icon">🏆</div>
+                    <h3 class="pricing-title">Wholesale</h3>
+                    <div class="pricing-amount">₹180</div>
+                    <ul class="pricing-features">
+                        <li>100+ T-Shirts</li>
+                        <li>Best Prices</li>
+                        <li>Dedicated Support</li>
+                        <li>Flexible Payment</li>
+                    </ul>
+                    <button class="order-btn" onclick="showOrderModal('Wholesale (100+ pieces)', '₹180 per piece')">Get Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Custom T-Shirts Section -->
+    <section id="custom" class="custom-section">
+        <div class="container custom-content">
+            <h2 class="section-title" style="color: white; background: none; -webkit-text-fill-color: white;">Custom T-Shirts</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Bring your ideas to life with personalized designs</p>
+            
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Your Design</h3>
+                    <p>Upload your logo, artwork, or text. We'll make it perfect.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Fast Production</h3>
+                    <p>Quick turnaround times without compromising on quality.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">Premium Print</h3>
+                    <p>High-quality printing that lasts wash after wash.</p>
+                </div>
+                
+                <div class="feature-box">
+                    <div class="feature-icon">💯</div>
+                    <h3 class="feature-title">No Minimums</h3>
+                    <p>Order as few as 10 pieces. Perfect for any need.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.5rem; margin-bottom: 2rem;">Starting from ₹350 per piece</p>
+                <button class="cta-btn" onclick="showOrderModal('Custom Design (Min. 10 pieces)', 'From ₹350 per piece')">Start Designing</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white; background: none; -webkit-text-fill-color: white;">Get In Touch</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">We're here to help with your order</p>
+            
+            <div class="contact-grid">
+                <div class="contact-box">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">Call Us</h3>
+                    <p class="contact-info">+91 63828 00552</p>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">📧</div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-info">velan9542@gmail.com</p>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">💬</div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <p class="contact-info">+91 63828 00552</p>
+                </div>
+                
+                <div class="contact-box">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title">Visit Us</h3>
+                    <p class="contact-info">Tirupur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 P2K T-Shirts. All Rights Reserved.</p>
+        <p>Premium Quality | Fast Delivery | Custom Designs</p>
+    </footer>
+    
+    <!-- Modal Popup -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <div class="modal-icon">📞</div>
+                <h2>Order Details</h2>
+            </div>
+            <!-- <div class="modal-body">
+                <div class="order-info">
+                    <div class="info-row">
+                        <span class="info-label">Product:</span>
+                        <span class="info-value" id="modalProduct">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Price:</span>
+                        <span class="info-value price" id="modalPrice">-</span>
+                    </div>
+                    <div class="order-image" style="text-align:center; margin-top: 1rem;">
+                        <img id="modalImage" src="" alt="Product Image" style="max-width:200px; border-radius:10px;">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="modal-body">
+                <div class="order-info">
+                    <div class="info-row">
+                        <span class="info-label">Product:</span>
+                        <span class="info-value" id="modalProduct">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Price:</span>
+                        <span class="info-value price" id="modalPrice">-</span>
+                    </div>
+                </div>
+                <div class="order-image" style="text-align:center; margin-top: 1rem;">
+                    <img id="modalImage" src="" alt="Product Image" style="max-width:200px; border-radius:10px;">
+                </div>
+            </div>
+
+            
+            <div class="modal-footer">
+                <button class="modal-btn" onclick="window.location.href='tel:+916382800552'">📞 Call to Order</button>
+                <button class="modal-btn" id="whatsappBtn">💬 WhatsApp</button>
+                <p class="modal-note">Call or message us to complete your order</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    const modal = document.getElementById('orderModal');
+    const modalContent = document.querySelector('.modal-content');
+    const modalHeader = document.querySelector('.modal-header');
+    const closeBtn = document.querySelector('.close');
+    let selectedProduct = '';
+    let selectedPrice = '';
+    // function showOrderModal(product, price) {
+    //     selectedProduct = product;
+    //     selectedPrice = price;
+    
+    //     document.getElementById('modalProduct').textContent = product;
+    //     document.getElementById('modalPrice').textContent = price;
+    
+    //     document.getElementById('orderModal').style.display = 'block';
+    // }
+    function showOrderModal(product, price, imgSrc) {
+        selectedProduct = product;
+        selectedPrice = price;
+    
+        document.getElementById('modalProduct').textContent = product;
+        document.getElementById('modalPrice').textContent = price;
+    
+        // Set image
+        document.getElementById('modalImage').src = imgSrc || 'https://via.placeholder.com/200';
+        
+        modal.style.display = 'block';
+    }
+    
+    //  WhatsApp send button
+    document.addEventListener("DOMContentLoaded", function() {
+        const whatsappBtn = document.getElementById('whatsappBtn');
+        if (whatsappBtn) {
+            whatsappBtn.addEventListener('click', function() {
+                const phone = "916382800552"; //  your WhatsApp number (no +)
+                
+                if (!selectedProduct || !selectedPrice) {
+                    alert("Please select a product first!");
+                    return;
+                }
+    
+                const message = `Hello ,
+    I'm interested in this product:
+    
+     *${selectedProduct}*
+     Price: *${selectedPrice}*
+    
+    Please share more details.`;
+    
+                // Encode and open WhatsApp link
+                const encodedMessage = encodeURIComponent(message);
+                const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+                window.open(url, "_blank");
+            });
+        }
+    });
+    
+    // Close modal
+    document.querySelector(".close").onclick = () => document.getElementById('orderModal').style.display = 'none';
+    window.onclick = e => { if (e.target.id === 'orderModal') document.getElementById('orderModal').style.display = 'none'; };
+    
+    // Drag functionality
+    let isDragging = false, initialX, initialY, xOffset = 0, yOffset = 0;
+    modalHeader.addEventListener('mousedown', dragStart);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', dragEnd);
+    modalHeader.addEventListener('touchstart', dragStart);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('touchend', dragEnd);
+
+    function dragStart(e) {
+        const evt = e.type === 'touchstart' ? e.touches[0] : e;
+        initialX = evt.clientX - xOffset;
+        initialY = evt.clientY - yOffset;
+        if (e.target === modalHeader || modalHeader.contains(e.target)) {
+            isDragging = true;
+        }
+    }
+
+    function drag(e) {
+        if (isDragging) {
+            e.preventDefault();
+            const evt = e.type === 'touchmove' ? e.touches[0] : e;
+            xOffset = evt.clientX - initialX;
+            yOffset = evt.clientY - initialY;
+            const modalRect = modalContent.getBoundingClientRect();
+            xOffset = Math.max(0, Math.min(xOffset, window.innerWidth - modalRect.width));
+            yOffset = Math.max(0, Math.min(yOffset, window.innerHeight - modalRect.height));
+            setTranslate(xOffset, yOffset, modalContent);
+        }
+    }
+
+    function dragEnd() {
+        isDragging = false;
+    }
+
+    function setTranslate(xPos, yPos, el) {
+        el.style.left = xPos + 'px';
+        el.style.top = yPos + 'px';
+    }
+
+    // Close modal
+    closeBtn.onclick = () => modal.style.display = 'none';
+    modal.onclick = e => { if (e.target == modal) modal.style.display = 'none'; };
+</script>
+
+</body>
+</html>
